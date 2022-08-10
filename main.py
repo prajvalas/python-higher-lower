@@ -15,7 +15,7 @@ def get_answer(count1, count2):
         correct = 'A'
     else:
         correct = 'B'
-    print(f"Psssshhh Correct answer is {correct}")
+    # print(f"Psssshhh Correct answer is {correct}")
     return correct
 
 
@@ -67,7 +67,7 @@ def main():
         print(logo)
         print_score(score)
         correct, prev = show_choices(first, used, prev)
-        answer = input("Who has more followers? Type 'A' or 'B' : ")
+        answer = input("Who has more followers? Type 'A' or 'B' : ").upper()
 
         if answer == correct:
             score += 1
